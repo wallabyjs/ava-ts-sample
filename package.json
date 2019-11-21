@@ -1,0 +1,22 @@
+{
+	"name": "ava-ts-sample",
+  "version": "1.0.0",
+  "description": "",
+	"scripts": {
+		"test": "ava"
+	},
+	"devDependencies": {
+		"ava": "^2.4.0",
+		"ts-node": "^8.5.2",
+		"typescript": "^3.7.2"
+	},
+	"ava": {
+		"compileEnhancements": false,
+		"extensions": [
+			"ts"
+		],
+		"require": [
+			"ts-node/register"
+		]
+	}
+}
