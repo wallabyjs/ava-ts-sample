@@ -1,6 +1,8 @@
 module.exports = function (wallaby) {
   return {
     files: [
+      'package.json',
+      'tsconfig.json',
       'app**/*.ts',
       '!app**/*.spec.ts'
     ],
@@ -10,7 +12,10 @@ module.exports = function (wallaby) {
     ],
 
     env: {
-      type: 'node'
+      type: 'node',
+      params: {
+        runner: '--experimental-vm-modules'
+      }
     },
 
     testFramework: 'ava'
